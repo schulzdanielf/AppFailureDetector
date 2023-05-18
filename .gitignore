@@ -1,0 +1,7 @@
+mlruns/
+.vscode/
+*.csv
+scripts/.ipynb_checkpoints/
+mlflow.db
+# Keras
+notebooks/Keras_Opt.ipynb
