@@ -63,7 +63,8 @@ create_environment:
 ifeq (True,$(HAS_CONDA))
 		@echo ">>> Detected conda, creating conda environment."
 ifeq (3,$(findstring 3,$(PYTHON_INTERPRETER)))
-	conda create --name $(PROJECT_NAME) python=3
+	conda create --name $(PROJECT_NAME) -c rapidsai -c conda-forge -c nvidia  \
+    rapids cuml cudf cudatoolkit  python=3.10
 else
 	conda create --name $(PROJECT_NAME) python=2.7
 endif
