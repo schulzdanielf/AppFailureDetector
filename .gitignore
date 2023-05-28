@@ -89,7 +89,7 @@ target/
 .mypy_cache/
 
 # Notebook File
-Keras_Opt.ipynb
+# Keras_Opt.ipynb
 
 mlruns/
 .vscode/
