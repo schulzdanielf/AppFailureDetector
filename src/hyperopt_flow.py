@@ -130,6 +130,7 @@ train, test = split(0.75, mat)
 print("Spliting the data into x and y features")
 x_train, y_train, x_test, y_test = train_test(train, test)
 split_strategy = "train_test"
+# import ipdb; ipdb.set_trace()
 params = get_best_parameters(split_strategy)
 print(params)
 eval_variance(x_train, y_train, x_test, y_test, params)

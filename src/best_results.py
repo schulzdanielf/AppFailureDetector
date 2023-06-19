@@ -50,11 +50,7 @@ def get_best_parameters(split_strategy):
                 "criterion",
                 "var_smoothing",
                 "learning_rate",
-                "metric",
-                "units",
-                "activation",
-                "batch",
-                "dropout",
+                "metric"
             ],
         ]
         parametros = {
